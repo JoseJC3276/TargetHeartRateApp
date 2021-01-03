@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    THIS IS THE START OF THE RESOURCE TAG   -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!--    START OF THE BACKGROUND STYLE   -->
+        <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/HospitalBG</item>
+        <item name="colorPrimaryVariant">@color/HospitalBG</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        </style>
+    <!--    END OF THE BACKGROUND STYLE   -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!--    START OF TITLE STYLE    -->
+        <style name="TitleStyle" parent="@android:style/TextAppearance">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textSize">28sp</item>
+            <item name="android:textStyle">bold</item>
+            <item name="fontFamily">@font/volkhov_bold</item>
+            <item name="android:textAlignment">center</item>
+            <item name="android:padding">10dp</item>
+            <item name="android:textColor">@color/red</item>
+        </style>
+    <!--    END OF TITLE STYLE  -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!--    START OF TEXT CENTERING -->
+        <style name="centerTextStyle" parent="TitleStyle">
+            <item name="android:gravity">center</item>
+        </style>
+    <!--    END OF TEXT CENTERING -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- START OF AGE VIEW STYLE    -->
+        <style name="AgeLabelStyle" parent="@android:style/TextAppearance">
+            <item name="android:layout_width">50dp</item>
+            <item name="android:layout_height">36dp</item>
+            <item name="android:textSize">12sp</item>
+            <item name="android:gravity">center</item>
+            <item name="android:textAlignment">center</item>
+            <item name="android:padding">10dp</item>
+            <item name="fontFamily">@font/volkhov_bold</item>
+            <item name="android:textColor">@color/blue</item>
+        </style>
+    <!-- END OF AGE LABEL STYLE    -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- START OF AGE VALUE STYLE    -->
+        <style name="AgeValueStyle" parent="@android:style/TextAppearance">
+            <item name="android:layout_width">50dp</item>
+            <item name="android:layout_height">36dp</item>
+            <item name="android:textSize">12sp</item>
+            <item name="android:gravity">center</item>
+            <item name="android:textAlignment">center</item>
+            <item name="android:padding">10dp</item>
+            <item name="fontFamily">@font/volkhov_bold</item>
+            <item name="android:textColor">@color/blue</item>
+            <item name="hintTextColor">@color/blue</item>
+        </style>
+    <!-- END OF AGE VALUE STYLE    -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<!--    START OF TOP IMAGE STYLE    -->
+    <style name="TopImageStyle" parent="@style/TextAppearance.AppCompat">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:hint"> " " </item>
+    </style>
+    <!--    END OF TOP IMAGE STYLE    -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!--    START OF BOTTOM IMAGE STYLE    -->
+    <style name="BottomImageStyle" parent="@style/TextAppearance.AppCompat">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:hint"> " " </item>
+    </style>
+    <!--    END OF BOTTOM IMAGE STYLE    -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!--    START OF RESULT VIEW STYLE    -->
+    <style name="resultView" parent="@style/TextAppearance.AppCompat">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="fontFamily">@font/volkhov_bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:hint"> " " </item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="hintTextColor">@color/blue</item>
+    </style>
+    <!--    END OF RESULT VIEW STYLE    -->
+<!--    THIS IS THE END OF THE RESOURCE TAG   -->
+</resources>
+

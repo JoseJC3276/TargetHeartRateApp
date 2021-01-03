@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!--    THIS CODE IS THE START OF THE BACKGROUND PROPERTIES OF THE APP   -->
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/calculateMaxHeartBeat"
+            style="@style/AppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/HospitalBG"
+            tools:context=".MainActivity"
+        >
+    <!--    THIS CODE IS THE END OF THE BACKGROUND PROPERTIES OF THE APP   -->
+
+<!--    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!--    THIS CODE IS THE START OF THE TITLE VIEW TEXT VIEW   -->
+        <TextView
+            android:id="@+id/titleView"
+            style="@style/TitleStyle"
+            android:layout_marginTop="80dp"
+            android:text="@string/check_your_heart_rate"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+        />
+    <!--    THIS CODE IS THE END OF THE TITLE VIEW TEXT VIEW  -->
+
+<!--    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!--    THIS IS THE START OF THE AGE LABEL TEXT VIEW     -->
+        <TextView
+            android:id="@+id/AgeView"
+            style="@style/AgeLabelStyle"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/ageViewText"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleView"
+        />
+    <!--    THIS IS THE END OF THE AGE LABEL TEXT VIEW     -->
+
+<!--    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!--    THIS IS THE START OF THE AGE VALUE TEXT VIEW    -->
+        <TextView
+            android:id="@+id/ageValue"
+            style="@style/AgeValueStyle"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:hint="@string/ageValueHint"
+            app:layout_constraintBaseline_toBaselineOf="@id/minusButton"
+            app:layout_constraintStart_toEndOf="@+id/minusButton"
+        />
+    <!--    THIS IS THE END OF THE AGE VALUE TEXT VIEW     -->
+
+<!--    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!--    THIS IS THE START OF THE MINUS BUTTON    -->
+        <Button
+            android:id="@+id/minusButton"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="@font/volkhov_bold"
+            android:text="@string/minusSign"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/AgeView"
+            app:layout_constraintEnd_toStartOf="@+id/ageValue"
+            app:layout_constraintStart_toEndOf="@+id/AgeView"
+        />
+    <!--    THIS IS THE END OF THE MINUS BUTTON    -->
+
+<!--    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!--    THIS IS THE START OF THE PLUS BUTTON    -->
+        <Button
+            android:id="@+id/plusButton"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="@font/volkhov_bold"
+            android:text="@string/plusSign"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/ageValue"
+            app:layout_constraintStart_toEndOf="@+id/ageValue"
+        />
+    <!--    THIS IS THE END OF THE PLUS BUTTON  -->
+
+<!--    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!--    THIS IS THE START OF THE CLEAR BUTTON   -->
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="@font/volkhov_bold"
+            android:text="@string/clearButtonString"
+            android:textAlignment="center"
+            android:textSize="7sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/plusButton"
+            app:layout_constraintStart_toEndOf="@+id/plusButton"
+        />
+    <!--    THIS IS THE END OF THE CLEAR BUTTON  -->
+
+<!--    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!--    THIS IS THE START OF THE HOSPITAL SPINNING LOGO IMAGE VIEW  -->
+        <ImageView
+            android:id="@+id/Hospital_Spinning_Logo_Image"
+            style="@style/TopImageStyle"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/download"
+        />
+    <!--    THIS IS THE END OF THE HOSPITAL SPINNING LOGO IMAGE VIEW  -->
+
+<!--    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!--    THIS IS THE START OF THE HOSPITAL CROSS LOGO IMAGE VIEW  -->
+        <ImageView
+            android:id="@+id/Hospital_logo_Image"
+            style="@style/TopImageStyle"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo"
+        />
+    <!--    THIS IS THE END OF THE HOSPITAL CROSS LOGO IMAGE VIEW  -->
+
+<!--    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!--    THIS IS THE START OF THE IEEE CUC LOGO IMAGE VIEW  -->
+        <ImageView
+            android:id="@+id/IEEE_CUC_Image"
+            style="@style/TopImageStyle"
+            android:contentDescription="@string/todo"
+            app:layout_constraintEnd_toStartOf="@+id/Hospital_logo_Image"
+            app:layout_constraintStart_toEndOf="@+id/Hospital_Spinning_Logo_Image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ieeecuclogo"
+        />
+    <!--    THIS IS THE END OF THE IEEE CUC LOGO IMAGE VIEW  -->
+
+<!--    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!--    THIS IS THE START OF THE HEARTBEAT LOGO BL (BOTTOM LEFT) IMAGE VIEW  -->
+        <ImageView
+            android:id="@+id/HeartBeatLogoBL"
+            style="@style/BottomImageStyle"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/heartbeat"
+        />
+    <!--    THIS IS THE END OF THE HEARTBEAT LOGO BL (BOTTOM LEFT) IMAGE VIEW  -->
+
+<!--    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!--    THIS IS THE START OF THE HEARTBEAT LOGO BR (BOTTOM RIGHT) IMAGE VIEW  -->
+        <ImageView
+            android:id="@+id/HeartBeatLogoBR"
+            style="@style/BottomImageStyle"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/heartbeat"
+        />
+    <!--    THIS IS THE END OF THE HEARTBEAT LOGO BR (BOTTOM RIGHT) IMAGE VIEW  -->
+
+<!--    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!--    START OF THE MAX HEART RATE BUTTON  -->
+        <Button
+            android:id="@+id/CalculateMaxHeartRateButton"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="96dp"
+            android:fontFamily="@font/volkhov_bold"
+            android:background="@drawable/rounded_corners"
+            android:text="@string/calculate_your_max_heart_rate"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleView"
+        />
+    <!--   END OF THE MAX HEART RATE BUTTON  -->
+
+<!--    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!--    START OF THE TARGET HEART RATE BUTTON  -->
+        <Button
+            android:id="@+id/Calculate_Target_Heart_Rate"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/volkhov_bold"
+            android:background="@drawable/rounded_corners"
+            android:text="@string/calculate_your_target_heart_rate"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MaxHeartBeatView"
+        />
+    <!--    END OF THE TARGET HEART RATE BUTTON  -->
+
+<!--    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!--    START OF THE MAX HEART BEAT TEXT VIEW  -->
+        <TextView
+            android:id="@+id/MaxHeartBeatView"
+            style="@style/resultView"
+            android:layout_marginTop="10dp"
+            android:hint="@string/enter_your_age_first"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CalculateMaxHeartRateButton"
+        />
+    <!--    END OF THE MAX HEART BEAT TEXT VIEW  -->
+
+<!--    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!--    START OF THE TARGET HEART BEAT TEXT VIEW  -->
+        <TextView
+            android:id="@+id/targetHeartBeatView"
+            style="@style/resultView"
+            android:layout_marginTop="10dp"
+            android:hint="@string/enter_your_age_first"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Calculate_Target_Heart_Rate"
+        />
+    <!--    END OF THE TARGET HEART BEAT TEXT VIEW  -->
+
+<!--    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!--    START OF THE JOGGING IMAGE VIEW  -->
+        <ImageView
+            android:id="@+id/joggingImage"
+            style="@style/BottomImageStyle"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/HeartBeatLogoBR"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toEndOf="@+id/HeartBeatLogoBL"
+            app:srcCompat="@drawable/jogging"
+        />
+    <!--    END OF THE JOGGING IMAGE VIEW  -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

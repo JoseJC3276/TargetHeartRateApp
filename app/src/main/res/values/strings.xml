@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MADFinalA</string>
+    <string name="check_your_heart_rate">CHECK YOUR HEART RATE</string>
+    <string name="ageViewText">AGE:</string>
+    <string name="ageValueHint">0</string>
+    <string name="plusSign">+</string>
+    <string name="minusSign">-</string>
+    <string name="clearButtonString">Clear</string>
+    <string name="todo">TODO</string>
+    <string name="calculate_your_max_heart_rate">Calculate Your MAX Heart Rate</string>
+    <string name="enter_your_age_first">Enter Your Age First.</string>
+    <string name="calculate_your_target_heart_rate">CALCULATE YOUR TARGET HEART RATE</string>
+</resources>
